@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">Shop</p>
+            <ul class="header-menu">
+                <li class="cart-wrapper">
+                    <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+                    <div class="cart-number">0</div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+   <main class="container">
+    <section class="shop">
+        <div class="shop-item">
+            <img src="images/boots.jpg" alt="boots">
+            <div class="item-details">
+                <h3 class="name">Boots</h3>
+                <p class="decsription">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, accusamus!
+                </p>
+                <div class="item-btns">
+                    <h4 class="price">R350</h4>
+                    <button type="button" id="add-to-cart">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+        <!-- shop item -->
+        <div class="shop-item">
+            <img src="images/trouser.jpg" alt="boots">
+            <div class="item-details">
+                <h3 class="name">Jeans</h3>
+                <p class="decsription">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, accusamus!
+                </p>
+                <div class="item-btns">
+                    <h4 class="price">R280</h4>
+                    <button type="button" id="add-to-cart">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+        <!-- shop item -->
+        <div class="shop-item">
+            <img src="images/t-shirt.jpg" alt="boots">
+            <div class="item-details">
+                <h3 class="name">T Shirts</h3>
+                <p class="decsription">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, accusamus!
+                </p>
+                <div class="item-btns">
+                    <h4 class="price">R160</h4>
+                    <button type="button" id="add-to-cart">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- cart body -->
+     <section class="cart-body-wrapper">
+        <div class="container">
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="cart-item">
+                    <td class="cart-image"><img src="" alt=""></td>
+                    <td class="cart-name"></td>
+                    <td class="cart-quantity">
+                        <div class="cart-quantity-btns">
+                            <button class="quantity-minus">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <div class="quantity-number">0</div>
+                            <button class="quantity-plus">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </td>
+                    <td class="cart-price"></td>
+                    <!-- <td class="cart-total">R500</td> -->
+                     <td class="cart-delete">
+                            <!-- <i class="fas fa-trash-can"></i> -->
+                     </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                <th>&nbsp</th>
+                <th>&nbsp</th>
+                <th>&nbsp</th>
+                <th>SUBTOTAL</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+     </section>
+
+   </main> 
+
+   <script src="script.js"></script>
+</body>
+</html>
