@@ -59,10 +59,10 @@ for(let i = 0; i < deleteBtn.length; i ++){
 /* delete btn */
 function deleteItem(event){
     let selectedBtn = event.target;
-    let cartItem = selectedBtn.parentElement;
+    let cartItem = selectedBtn.parentElement.parentElement.parentElement;
     let cartItemParent = cartItem.parentElement;
     cartItemParent.removeChild(cartItem);
-    console.log();
+    console.log(cartItemParent);
 }
 
 
